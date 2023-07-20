@@ -28,7 +28,7 @@
         .wrapper {
             width: 100%;
             table-layout: fixed;
-            background-color: pink;
+            background-color: #e1e1e1;
             padding-bottom: 60px;
         }
 
@@ -36,8 +36,10 @@
             background-color: #ffff;
             margin: 0 auto;
             width: 100%;
-            max-width: 600px; /*recommended email template width for emails, to be displayed properly across email clients*/
-            border-spacing: 0; /*sets the distance between the borders of adjacent cells.*/
+            max-width: 600px;
+            /*recommended email template width for emails, to be displayed properly across email clients*/
+            border-spacing: 0;
+            /*sets the distance between the borders of adjacent cells.*/
             font-family: sans-serif;
             color: #171a1b;
         }
@@ -47,7 +49,7 @@
             font-size: 0;
 
         }
-        
+
         .two-cols .column {
             max-width: 300px;
             display: inline-block;
@@ -55,7 +57,29 @@
             text-align: center;
         }
 
-        
+        .three-cols {
+            text-align: center;
+            font-size: 0;
+            padding: 15px 0 15px;
+        }
+
+        .three-cols .column {
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .three-cols .padding {
+            padding: 15px;
+        }
+
+        .three-cols .content {
+            font-size: 15px;
+            line-height: 16px;
+            padding: 0 5px;
+        }
+
     </style>
 </head>
 
@@ -81,7 +105,8 @@
                                 <table class="column">
                                     <tr>
                                         <td style="padding: 0 62px 10px">
-                                            <a class="companyName" href=""><img src="/images/logo.png" alt="Company logo" width="50%" title="Company Name"></a>
+                                            <a class="companyName" href=""><img src="/images/logo.png"
+                                                    alt="Company logo" width="50%" title="Company Name"></a>
                                         </td>
                                     </tr>
                                 </table>
@@ -105,12 +130,88 @@
             <!-- BANNER IMAGE -->
             <tr>
                 <td>
-                    <a href="#"><img src="/images/banner.png" alt="" width="600" style="max-width: 100%; border: 1px solid black"></a>
+                    <a href="#"><img src="/images/bannerEm.jpg" alt="" width="600"
+                            style="max-width: 100%; border: 1px solid black"></a>
                 </td>
             </tr>
 
             <!-- THREE COLUMN SECTION -->
-
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="three-cols">
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="/images/email.png" alt="" width="130"
+                                                                style="max-width:130px"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-weight: bold; font-size: 15px;">Lorem ipsum 1</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                            Modi deserunt distinctio quos molestias! Itaque,
+                                                            repudiandae!</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="/images/settings.png" alt="" width="130"
+                                                                style="max-width:130px"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-weight: bold; font-size: 15px;">Lorem ipsum 2</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                            Modi deserunt distinctio quos molestias! Itaque,
+                                                            repudiandae!</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="/images/home.png" alt="" width="130"
+                                                                style="max-width:130px"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-weight: bold; font-size: 15px;">Lorem ipsum 3</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                            Modi deserunt distinctio quos molestias! Itaque,
+                                                            repudiandae!</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
 
             <!-- TWO COLUMN SECTION -->
 
