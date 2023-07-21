@@ -52,7 +52,7 @@
         .icons a img:hover {
             border: 2px solid #FDC53E;
             border-radius: 50%;
-            box-sizing: border-box; 
+            box-sizing: border-box;
             /* with this property the border will be included within the element's dimension,
             while hovering and adding those borders nothing will be pushed around*/
         }
@@ -124,7 +124,7 @@
         .button-darker {
             border: 2px solid #171a1b;
             border-radius: 5px;
-            background-color:#171a1b;
+            background-color: #171a1b;
             color: #fafafa;
             text-decoration: none;
             padding: 5px;
@@ -139,6 +139,23 @@
             box-shadow: 5px 5px 10px #8a6d29;
         }
 
+        .footer-icons a img:hover {
+            border: 2px solid #E8E8EA;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .unsubscribe {
+            padding: 5px;
+            font-size: small;
+            display: block;
+            cursor: pointer;
+
+        }
+
+        .unsubscribe:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -283,8 +300,8 @@
                                             <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <img src="/images/darker-creative.png" alt=""
-                                                                width="260" style="max-width:260px;">
+                                                        <img src="/images/darker-creative.png" alt="" width="260"
+                                                            style="max-width:260px;">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -327,7 +344,8 @@
                                 <p style="font-size: 20px; font-weight:bold">
                                     Lorem ipsum dolor sit.
                                 </p>
-                                <p style="line-height: 23px; font-size:15px; padding: 5px 0 15px"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In beatae laborum
+                                <p style="line-height: 23px; font-size:15px; padding: 5px 0 15px"> Lorem, ipsum dolor
+                                    sit amet consectetur adipisicing elit. In beatae laborum
                                     assumenda laudantium sequi suscipit cumque nisi deleniti accusamus? Neque, minima
                                     atque cupiditate, a nesciunt saepe beatae odio cum quo odit iste nam quos. Quod
                                     possimus eos iure dolore corporis fugiat nam deleniti accusamus? Quaerat.
@@ -340,6 +358,50 @@
             </tr>
 
             <!-- FOOTER SECTION -->
+            <tr>
+                <td style="background-color: black;">
+                    <table width="100%">
+                        <tr>
+                            <td class="two-cols last">
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a class="companyName" href=""><img
+                                                                src="/images/logo-inverted.png" alt="Company logo"
+                                                                width="" title="Company Name"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="two-cols footer-icons">
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding" style="text-align: center; font-size: 15px; color:#ffffff;">
+                                            <p>Practicing Marketing Email</p>
+                                            <p>Fake Address, London SW1A 00A </p>
+                                            <a href="#"><img src="/images/white-facebook.png" alt="" width="30"></a>
+                                            <a href="#"><img src="/images/white-instagram.png" alt="" width="30"></a>
+                                            <a href="#"><img src="/images/white-twitter.png" alt="" width="30"></a>
+                                            <a href="#"><img src="/images/white-linkedin.png" alt="" width="30"></a>
+                                            <a href="#"><img src="/images/white-youtube.png" alt="" width="30"></a>
+                                            <a class="unsubscribe"
+                                                style=" font-size:small; display:block; cursor:pointer">Unsubscribe
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
         </table>
     </center>
 
