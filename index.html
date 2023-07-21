@@ -47,7 +47,14 @@
         .two-cols {
             text-align: center;
             font-size: 0;
+        }
 
+        .icons a img:hover {
+            border: 2px solid #FDC53E;
+            border-radius: 50%;
+            box-sizing: border-box; 
+            /* with this property the border will be included within the element's dimension,
+            while hovering and adding those borders nothing will be pushed around*/
         }
 
         .two-cols .column {
@@ -99,7 +106,7 @@
             border: 2px solid #3D5C78;
             background-color: #F26553;
             border-radius: 5px;
-            color: #fafafa;
+            color: #ffff;
             text-decoration: none;
             font-weight: bold;
             padding: 5px;
@@ -108,6 +115,30 @@
             text-align: center;
             font-size: 18px;
         }
+
+        .button:hover {
+            font-size: 19px;
+            box-shadow: -5px 5px 10px #ffff;
+        }
+
+        .button-darker {
+            border: 2px solid #171a1b;
+            border-radius: 5px;
+            background-color:#171a1b;
+            color: #fafafa;
+            text-decoration: none;
+            padding: 5px;
+            box-shadow: 5px 5px 10px #171a1b;
+            display: block;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .button-darker:hover {
+            font-size: 19px;
+            box-shadow: 5px 5px 10px #8a6d29;
+        }
+
     </style>
 </head>
 
@@ -140,7 +171,7 @@
                                 </table>
                                 <table class="column">
                                     <tr>
-                                        <td style="padding: 10px 35px;">
+                                        <td class="icons" style="padding: 10px 35px;">
                                             <a href="#"><img src="/images/black-facebook.png" alt="" width="30"></a>
                                             <a href="#"><img src="/images/black-instagram.png" alt="" width="30"></a>
                                             <a href="#"><img src="/images/black-twitter.png" alt="" width="30"></a>
@@ -173,7 +204,7 @@
                                         <td class="padding">
                                             <table class="content">
                                                 <tr>
-                                                    <td>
+                                                    <td class="icons">
                                                         <a href="#"><img src="/images/email.png" alt="" width="130"
                                                                 style="max-width:130px"></a>
                                                     </td>
@@ -195,7 +226,7 @@
                                         <td class="padding">
                                             <table class="content">
                                                 <tr>
-                                                    <td>
+                                                    <td class="icons">
                                                         <a href="#"><img src="/images/settings.png" alt="" width="130"
                                                                 style="max-width:130px"></a>
                                                     </td>
@@ -217,7 +248,7 @@
                                         <td class="padding">
                                             <table class="content">
                                                 <tr>
-                                                    <td>
+                                                    <td class="icons">
                                                         <a href="#"><img src="/images/home.png" alt="" width="130"
                                                                 style="max-width:130px"></a>
                                                     </td>
@@ -252,8 +283,8 @@
                                             <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="/images/darker-creative.png" alt=""
-                                                                width="260" style="max-width:260px;"></a>
+                                                        <img src="/images/darker-creative.png" alt=""
+                                                                width="260" style="max-width:260px;">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -289,7 +320,7 @@
 
             <!-- TITLE, TEXT & BUTTON -->
             <tr>
-                <td>
+                <td style="padding: 15px 15px 40px;">
                     <table width:"100%">
                         <tr>
                             <td style="text-align: center; padding: 15px">
